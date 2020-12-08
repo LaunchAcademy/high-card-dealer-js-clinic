@@ -20,7 +20,11 @@ class Deck {
   }
 
   deal() {
-    // your code here
+    let cardHand = []
+    for (let i = 0; i < 4; i ++) {
+      cardHand.push(this.cards.pop())
+    }
+    return cardHand
   }
 }
 
