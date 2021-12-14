@@ -20,8 +20,19 @@ class Deck {
   }
 
   deal() {
-    // your code here
+    let dealtCards = []
+    for (let i = 0; i < 4; i++) {
+      dealtCards.push(this.cards.pop())
+    }
+    return dealtCards
   }
+  // deal(numberOfCards) {
+  //   let dealtCards = []
+  //   for (let i = 0; i < numberOfCards; i++) {
+  //     dealtCards.push(this.cards.pop())
+  //   }
+  //   return cards
+  // }
 }
 
 export default Deck
